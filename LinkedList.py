@@ -5,23 +5,25 @@ class LinkedList():
         self.next = None
     
     def LL_insert(self, new_list):
-        self.next = new_list
+        if self.next is None:  
+            self.next = new_list
+        else:
+            self.next.LL_insert(new_list) 
 
     def LL_search(self, x):
-        if self == None:
-            return None
-        
         if(x == self.item):
             return self
-        else:
-            return self.LL_search(self.next)
+        
+        if self.next == None:
+            return None
+        
+        return self.LL_search(self.next)
         
     def LL_print(self):
-        if self == None:
-            return None
-        else:
-            print(self.item)
-            return self.LL_print(self.next)
+        print(self.item)
+        
+        if self.next is not None:
+            self.next.LL_print()
         
 
 
