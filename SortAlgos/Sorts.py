@@ -1,4 +1,4 @@
-def bubble_sort(arr: list):
+def bubble_sort(arr: list) -> list:
      """
         Given an array, bubble sort compares each value to the next and swaps if the left value is > right value.
         In each iteration, the last value should be the greatest, so the next time we can just go through n-1 interations.
@@ -13,6 +13,13 @@ def bubble_sort(arr: list):
                     # arr[j], arr[j+1] = arr[j+1], arr[j] could also be used in this
 
      return arr
+
+def selection_sort(arr: list) -> list: # added comment
+     n = len(list)
+     for i in range(n-1):
+          for j in range(i, n):
+               
+               
 
 if __name__ == "__main__":
     a1 = [2,3,5,6,7,8,4,1,0]
