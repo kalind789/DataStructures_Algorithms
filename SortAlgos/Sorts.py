@@ -18,6 +18,7 @@ def selection_sort(arr: list) -> list:
      n = len(list)
      for i in range(n-1):
           for j in range(i, n):
+               raise NotImplementedError()
                
                
 

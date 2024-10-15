@@ -1,10 +1,7 @@
-from SortAlgos.Sorts import bubble_sort
-
 def binary_search(arr: list, target: int):
     """
         Takes a sorted array and searches for a value by removing half the array in each step.
-    """
-    arr = bubble_sort(arr)          # makes sure an array is sorted using my custom bubble_sort
+    """         
     i = 0                           # start index
     j = len(arr) - 1                # end index
 
@@ -22,8 +19,17 @@ def binary_search(arr: list, target: int):
         
     return -1
 
+def linear_search(arr: list, target: int):
+    n = len(arr)
+    for i in range(n):
+          if arr[i] == target:
+               return i
+    
+    return -1
+
 if __name__ == "__main__":
-    a1 = [2,3,5,6,7,8,4,1,0]
+    a1 = [1,2,3,4,5,6,7,8,9,10]
     target = 6
     
+    print(linear_search(a1, target))
     print(binary_search(a1, target))
