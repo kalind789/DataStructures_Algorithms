@@ -1,9 +1,9 @@
-📊 Sorting Algorithm Visualizer
+## 📊 Sorting Algorithm Visualizer
 
 A dynamic tool to visually demonstrate and understand sorting algorithms step by step. Built using Python and Tkinter.
 
 
-🌟 Features
+## 🌟 Features
 
 🎨 Interactive GUI: A simple and intuitive interface built with Tkinter.
 
@@ -13,7 +13,7 @@ A dynamic tool to visually demonstrate and understand sorting algorithms step by
 
 🎬 Real-Time Updates: Watch elements swap and shift dynamically as the algorithm progresses.
 
-🔢 Available Algorithms
+## 🔢 Available Algorithms
 
 Bubble Sort: 🌊 Visualizes adjacent element comparisons and swaps.
 
