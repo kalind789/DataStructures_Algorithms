@@ -1,4 +1,5 @@
 📊 Sorting Algorithm Visualizer
+
 A dynamic tool to visually demonstrate and understand sorting algorithms step by step. Built using Python and Tkinter.
 
 
