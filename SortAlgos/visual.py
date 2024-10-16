@@ -27,7 +27,7 @@ class SortingVisualizerApp:
         algorithm_label = tk.Label(self.control_frame, text="Algorithm: ")
         algorithm_label.grid(row=0, column=0, padx=5, pady=5)
         self.algorithm_var = tk.StringVar()
-        algorithm_menu = ttk.Combobox(self.control_frame, textvariable=self.algorithm_var, values=["Bubble Sort"])
+        algorithm_menu = ttk.Combobox(self.control_frame, textvariable=self.algorithm_var, values=["Bubble Sort", "Selection Sort"])
         algorithm_menu.grid(row=0, column=1, padx=5, pady=5)
         algorithm_menu.current(0)
 
@@ -74,6 +74,9 @@ class SortingVisualizerApp:
     def start_sorting(self):
         algorithm = self.algorithm_var.get()
         if algorithm == "Bubble Sort":
-            # Instantiate SortingAlgorithm and start the sorting process
             self.sorting_algorithm = SortingAlgorithm(self)
             self.sorting_algorithm.bubble_sort_step(0, 0)
+        elif algorithm == "Selection Sort":
+            self.sorting_algorithm = SortingAlgorithm(self)
+            self.sorting_algorithm.min_idx = 0
+            self.sorting_algorithm.selection_sort_step(0,0)
