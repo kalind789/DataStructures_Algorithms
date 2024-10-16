@@ -44,6 +44,9 @@ class SortingVisualizerApp:
         reset_button = tk.Button(self.control_frame, text="Reset", command=self.reset_array)
         reset_button.grid(row=2, column=1, padx=5, pady=5)
 
+        quit_button = tk.Button(self.control_frame, text="Quit", command=quit)
+        quit_button.grid(row=2, column=2, padx=5, pady=5)
+
     def draw_array(self, color_array):
         self.canvas.delete("all")
         c_width = 700
